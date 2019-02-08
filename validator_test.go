@@ -40,7 +40,7 @@ func (vt *ValidatorTest) NewValidator(domains []string,
 		})
 }
 
-// This will close vt.auth_email_file.
+// WriteEmails will close vt.auth_email_file.
 func (vt *ValidatorTest) WriteEmails(t *testing.T, emails []string) {
 	defer vt.auth_email_file.Close()
 	vt.auth_email_file.WriteString(strings.Join(emails, "\n"))

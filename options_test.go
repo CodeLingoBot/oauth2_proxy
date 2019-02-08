@@ -72,7 +72,7 @@ func TestInitializedOptions(t *testing.T) {
 	assert.Equal(t, nil, o.Validate())
 }
 
-// Note that it's not worth testing nonparseable URLs, since url.Parse()
+// TestRedirectURL; Note that it's not worth testing nonparseable URLs, since url.Parse()
 // seems to parse damn near anything.
 func TestRedirectURL(t *testing.T) {
 	o := testOptions()

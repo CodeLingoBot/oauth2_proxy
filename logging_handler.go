@@ -114,7 +114,7 @@ func (h loggingHandler) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	h.writeLogLine(logger.authInfo, logger.upstream, req, url, t, logger.Status(), logger.Size())
 }
 
-// Log entry for req similar to Apache Common Log Format.
+// writeLogLine; Log entry for req similar to Apache Common Log Format.
 // ts is the timestamp with which the entry should be logged.
 // status, size are used to provide the response HTTP status and size.
 func (h loggingHandler) writeLogLine(username, upstream string, req *http.Request, url url.URL, ts time.Time, status int, size int) {

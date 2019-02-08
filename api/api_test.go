@@ -69,7 +69,7 @@ func TestJsonParsingError(t *testing.T) {
 	assert.NotEqual(t, nil, err)
 }
 
-// Parsing a URL practically never fails, so we won't cover that test case.
+// TestRequestUnparsedResponseUsingAccessTokenParameter; Parsing a URL practically never fails, so we won't cover that test case.
 func TestRequestUnparsedResponseUsingAccessTokenParameter(t *testing.T) {
 	backend := httptest.NewServer(http.HandlerFunc(
 		func(w http.ResponseWriter, r *http.Request) {

@@ -18,7 +18,7 @@ func (tp *ValidateSessionStateTestProvider) GetEmailAddress(s *SessionState) (st
 	return "", errors.New("not implemented")
 }
 
-// Note that we're testing the internal validateToken() used to implement
+// ValidateSessionState; Note that we're testing the internal validateToken() used to implement
 // several Provider's ValidateSessionState() implementations
 func (tp *ValidateSessionStateTestProvider) ValidateSessionState(s *SessionState) bool {
 	return false

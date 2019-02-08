@@ -128,7 +128,7 @@ func TestGitHubProviderGetEmailAddressWithOrg(t *testing.T) {
 	assert.Equal(t, "michael.bland@gsa.gov", email)
 }
 
-// Note that trying to trigger the "failed building request" case is not
+// TestGitHubProviderGetEmailAddressFailedRequest; Note that trying to trigger the "failed building request" case is not
 // practical, since the only way it can fail is if the URL fails to parse.
 func TestGitHubProviderGetEmailAddressFailedRequest(t *testing.T) {
 	b := testGitHubBackend([]string{"unused payload"})
